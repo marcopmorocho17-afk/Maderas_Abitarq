@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maderas Habitarq</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" media="screen and (max-width: 768px)" />
+    <link rel="icon" href="../otros/LogoEmpresa.png" />
+    <!-- Cargamos el script con defer para que espere al HTML -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- NAVEGACIÓN SUPERIOR -->
+    <header>
+        <div class="Cabezera">
+            <img src="../otros/LogoEmpresa.png" alt="Empresa" id="Logo" />
+            <h2>Maderas Habitarq</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#Seccion1">Sección 1</a></li>
+                <li><a href="#Seccion2">Sección 2</a></li>
+                <li><a href="#Seccion3">Sección 3</a></li>
+                <li><a href="#Catalogo">Catalogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER DE BIENVENIDA -->
+    <div class="Titulo">
+        <h1>Maderas Habitarq</h1>
+        <h2>Todo en madera para tu hogar</h2>
+    </div>
+
+    <!-- CUADRÍCULA DE PRODUCTOS -->
+    <main class="galeria-productos">
+        <!-- Tarjeta de Duelas con sus sub-imágenes ocultas -->
+        <div class="tarjeta-producto" data-titulo="Duelas"
+            data-descripcion="Maderas selectas de alta resistencia, ideales para pisos y revestimientos elegantes. Disponibles en diferentes tipos y acabados."
+            id="Seccion1">
+            <img src="../otros/Duelas.png" alt="Duelas" />
+            <div class="info-tarjeta">
+                <h4>Duelas</h4>
+            </div>
+            <div class="variante-oculta">
+                <div class="item-variante">
+                    <img src="../otros/D2.png" alt="Duela panelada" /><span>Duela panelada</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/DC.png" alt="Duela de chonta" /><span>Duela de chonta</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/DB.png" alt="Duela Biselada" /><span>Duelas biseladas</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/DP1.png" alt="Duela de pinos" /><span>Duela de pinos</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/DP2.png" alt="Duela de eucalipto 2 X 1" /><span>Duela de eucalipto 2 X 1</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/DTC.png" alt="Duela para tendido de camas" /><span>Duelas para tendido de
+                        camas</span>
+                </div>
+            </div>
+        </div>
+        <!-- Demás productos estándar -->
+        <!-- Tarjeta de Rastreras CORREGIDA (Reemplaza la tuya por esta completa) -->
+        <div class="tarjeta-producto" data-titulo="Rastreras"
+            data-descripcion="Zócalos y rastreras de madera perfectos para proteger tus paredes y dar un acabado limpio a tus pisos.">
+            <div class="contenedor-img-tarjeta">
+                <img src="../otros/RASTRERAS.png" alt="rastreras" />
+            </div>
+            <div class="info-tarjeta">
+                <h4>Rastreras</h4>
+            </div>
+
+            <!-- Todo lo que va aquí adentro se cargará en rejilla dentro del modal -->
+            <div class="variante-oculta">
+                <div class="item-variante">
+                    <img src="../otros/R1.png" alt="Rastrera de 6cm" />
+                    <span>Rastrera de 6cm</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/R2.png" alt="Rastrera de 9cm" />
+                    <span>Rastrera de 9cm</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/R3.png" alt="Rastrera de 6cm" />
+                    <span>Rastrera de 6cm</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/R4.png" alt="Rastrera de 9cm" />
+                    <span>Rastrera de 9cm</span>
+                </div>
+                <div class="item-variante" style="
+              grid-column: 1 / -1;
+              background: #eef2f3;
+              padding: 15px;
+              margin-top: 10px;
+            ">
+                    <span style="font-size: 14px; color: #3e2723">📐 <strong>Medidas personalizadas</strong> según tus
+                        necesidades</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Cornisas CORREGIDA -->
+        <div class="tarjeta-producto" data-titulo="Cornisas"
+            data-descripcion="Molduras superiores decorativas que aportan elegancia y un estilo único a las uniones entre paredes y techos.">
+            <div class="contenedor-img-tarjeta">
+                <img src="../otros/cornizas.png" alt="cornizas" />
+            </div>
+            <div class="info-tarjeta">
+                <h4>Cornisas</h4>
+            </div>
+
+            <!-- Sub-galería oculta para la ventana flotante -->
+            <div class="variante-oculta">
+                <div class="item-variante">
+                    <img src="../otros/CR1.png" alt="Cornisas 1" />
+                    <span>Cornisa Modelo 1</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/CR2.png" alt="Cornisas 2" />
+                    <span>Cornisa Modelo 2</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/CR4.png" alt="Cornisas 3" />
+                    <span>Cornisa Modelo 3</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/CR3.png" alt="Cornisas 4" />
+                    <span>Cornisa Modelo 4</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Locado CORREGIDA -->
+        <div class="tarjeta-producto" data-titulo="Locado de madera"
+            data-descripcion="Servicio especializado de lacado y protección para resaltar las vetas naturales y garantizar durabilidad.">
+            <div class="contenedor-img-tarjeta">
+                <img src="../otros/Locado.png" alt="Locado" />
+            </div>
+            <div class="info-tarjeta">
+                <h4>Locado de madera</h4>
+            </div>
+
+            <!-- Sub-galería oculta para la ventana flotante -->
+            <div class="variante-oculta">
+                <div class="item-variante">
+                    <img src="../otros/L1.png" alt="Locado 1" />
+                    <span>Acabado Mate</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/L2.png" alt="Locado 2" />
+                    <span>Acabado Semibrillante</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/L3.png" alt="Locado 3" />
+                    <span>Acabado Brillante</span>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/L4.png" alt="Locado 4" />
+                    <span>Protección Alta Gama</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Mangón CORREGIDA -->
+        <div class="tarjeta-producto" data-titulo="Mangón para pasamanos"
+            data-descripcion="Pasamanos y mangones robustos de madera fina, diseñados para escaleras seguras y estéticas."
+            id="Seccion2">
+            <div class="contenedor-img-tarjeta">
+                <img src="../otros/mangon.png" alt="mangon" />
+            </div>
+            <div class="info-tarjeta">
+                <h4>Mangón para pasamanos</h4>
+            </div>
+
+            <!-- Sub-galería oculta con una sola variante igual a las anteriores -->
+            <div class="variante-oculta">
+                <div class="item-variante">
+                    <img src="../otros/mangon.png" alt="mangon" />
+                    <samp>Mangon 1</samp>
+                </div>
+                <div class="item-variante">
+                    <img src="../otros/M1.png" alt="Mangon" />
+                    <samp>Mangon 2</samp>
+                </div>
+                <div class="item-variante" style="
+              grid-column: 1 / -1;
+              background: #eef2f3;
+              padding: 15px;
+              margin-top: 10px;
+            ">
+                    <span style="font-size: 14px; color: #3e2723">📐Medida de 8cm de ancho desde los 8.00$
+                        <strong>Precio varia según la madera</strong></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta-producto" data-titulo="Bolillos"
+            data-descripcion="Columnas redondas y bolillos torneados con precisión milimétrica para estructuras o decoración.">
+            <img src="../otros/bolillos.png" alt="bolillos" />
+            <div class="info-tarjeta">
+                <h4>Bolillos</h4>
+            </div>
+            <div class="variante-oculta">
+                <div class="item-variante">
+                    <img src="../otros/bolillos.png" alt="Bolillos">
+                </div>
+                <div class="item-variante" style="
+              grid-column: 1 / -1;
+              background: #eef2f3;
+              padding: 15px;
+              margin-top: 10px;
+            ">
+                    <span style="font-size: 14px; color: #3e2723">Ideal para cortineros , closets
+                        <br>
+                        📐Medidas : 3CM de diametro
+                        <br>
+                        <strong>MADERAS: TEKA SEIQUE CANELO-LAUREL</strong></span>
+                </div>
+            </div>
+        </div>
+        <div class="tarjeta-producto" data-titulo="Tarugos"
+            data-descripcion="Tarugos de madera maciza indispensables para ensambles invisibles, fuertes y de calidad artesanal.">
+            <img src="../otros/tarugo.png" alt="tarugo" />
+            <div class="info-tarjeta">
+                <h4>Tarugo</h4>
+            </div>
+            <div class="variante-oculta">
+                <div class="item-variante">
+                    <img src="../otros/tarugo.png" alt="Tarugo">
+                </div>
+                <div class="item-variante" style="
+              grid-column: 1 / -1;
+              background: #eef2f3;
+              padding: 15px;
+              margin-top: 10px;
+            ">
+                    <span style="font-size: 14px; color: #3e2723">Elemento esencial para unir piezas de madera o fijar
+                        objetos de forma segura sobre superficies sólidas.
+                        <br>
+                        📐Medidas : 12MM - 8MM - 6MM
+                        <br>
+                        <strong>MADERA: EUCALIPTO - CHANUL</strong></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta-producto" data-titulo="Viga Avino"
+            data-descripcion="Vigas estructurales de gran soporte y resistencia, ideales para techos altos y proyectos rústicos o modernos.">
+            <img src="../otros/Viga.png" alt="Viga Avino" />
+            <div class="info-tarjeta">
+                <h4>Vigas avino</h4>
+            </div>
+            <div class="variante-oculta">
+                <div class="item-variante">
+                    <img src="../otros/Viga.png" alt="Vigas avino">
+                </div>
+                <div class="item-variante" style="
+              grid-column: 1 / -1;
+              background: #eef2f3;
+              padding: 15px;
+              margin-top: 10px;
+            ">
+                    <span style="font-size: 14px; color: #3e2723">Madera de excelente resistencia y durabilidad, ideal
+                        para estructuras y trabajos de madera vista gracias a su atractivo color natural. Puede
+                        mantenerse únicamente con aceites, sin necesidad de lacado.
+                        <br>
+                        📐Medidas : 7*14 hasta 6MTS largo</span>
+                </div>
+            </div>
+        </div>
+        <div class="tarjeta-producto" data-titulo="Madera de Laurel"
+            data-descripcion="Madera semidura muy vistosa y fácil de trabajar, excelente para muebles y carpintería residencial."
+            id="Seccion3">
+            <img src="../otros/laurel.png" alt="Laurel" />
+            <div class="info-tarjeta">
+                <h4>Laurel</h4>
+            </div>
+            <div class="variante-oculta">
+                <div class="item-variante">
+                    <img src="../otros/laurel.png" alt="Laurel">
+                </div>
+                <div class="item-variante" style="
+              grid-column: 1 / -1;
+              background: #eef2f3;
+              padding: 15px;
+              margin-top: 10px;
+            ">
+                    <span style="font-size: 14px; color: #3e2723">Madera liviana, versátil y fácil de trabajar,
+                        caracterizada por su tono claro con veteado (jaspe) en marrón oscuro.
+                        <br>
+                        📐Medidas : TABLON : GROSOR 4CM X 290CM DE
+                        LARGO X 20CM ANCHO
+                        TABLA : GROSOR 1.8CM X 290CM DE
+                        LARGO X 20CM ANCHO
+                        <br>
+                        <strong></strong></span>
+                </div>
+            </div>
+        </div>
+        <div class="tarjeta-producto" data-titulo="Madera de Pino"
+            data-descripcion="Madera versátil, económica y tratada para resistir plagas. Ideal para la construcción en general.">
+            <img src="../otros/Pino.png" alt="Pino" />
+            <div class="info-tarjeta">
+                <h4>Pino</h4>
+            </div>
+            <div class="variante-oculta">
+                <div class="item-variante">
+                    <img src="../otros/Pino.png" alt="Pino">
+                </div>
+                <div class="item-variante" style="
+              grid-column: 1 / -1;
+              background: #eef2f3;
+              padding: 15px;
+              margin-top: 10px;
+            ">
+                    <span style="font-size: 14px; color: #3e2723">El pino es una madera resistente y de dureza media,
+                        ideal para interiores. Se distingue por su tono claro y la presencia de nudos naturales, los
+                        cuales aportan un atractivo acabado rústico a los muebles.
+                        <br>
+                        📐Medidas : TABLON: GROSOR 4CM X 290CM LARGO X
+                        20CM ANCHO
+                        TABLA: GROSOR 1.8CM X 290 CM LARGO X
+                        20CM ANCHO
+                        <strong></strong></span>
+                </div>
+            </div>
+        </div>
+        <div class="tarjeta-producto" data-titulo="Madera de Seique"
+            data-descripcion="Una de las maderas más cotizadas por su gran dureza, estabilidad y resistencia a la humedad de la zona.">
+            <img src="../otros/Seique.png" alt="Seique" />
+            <div class="info-tarjeta">
+                <h4>Seiquel</h4>
+            </div>
+            <div class="variante-oculta">
+                <div class="item-variante">
+                    <img src="../otros/Seique.png" alt="Seiquel">
+                </div>
+                <div class="item-variante" style="
+              grid-column: 1 / -1;
+              background: #eef2f3;
+              padding: 15px;
+              margin-top: 10px;
+            ">
+                    <span style="font-size: 14px; color: #3e2723">El seiquel es una madera versátil y fácil de trabajar
+                        que ofrece buenos resultados. Se caracteriza por ser fácil de aserrar, no presentar resistencia
+                        al clavado y ser resistente a las polillas, siendo una opción excelente para trabajos en
+                        exteriores.
+                        <br>
+                        📐Medidas :TABLON: GROSOR 4CM X 290CM LARGO X
+                        20CM ANCHO
+                        TABLA: GROSOR 1.8CM X 290 CM LARGO X
+                        20CM ANCHO
+                        <strong></strong></span>
+                </div>
+            </div>
+        </div>
+        <div class="tarjeta-producto" data-titulo="Madera de Canelo"
+            data-descripcion="Madera fina de excelentes acabados estéticos, perfecta para detalles decorativos y acabados de lujo.">
+            <img src="../otros/Canelo.png" alt="Canelo" />
+            <div class="info-tarjeta">
+                <h4>Canelo</h4>
+            </div>
+            <div class="variante-oculta">
+                <div class="item-variante">
+                    <img src="../otros/Canelo.png" alt="Canelo">
+                </div>
+                <div class="item-variante" style="
+              grid-column: 1 / -1;
+              background: #eef2f3;
+              padding: 15px;
+              margin-top: 10px;
+            ">
+                    <span style="font-size: 14px; color: #3e2723">Madera de peso y dureza intermedios, estéticamente
+                        atractiva; ideal para muebles y molduras, pero requiere protección en exteriores.
+                        📐Medidas :TABLON: GROSOR 4CM X 290CM LARGO X
+                        20CM ANCHO
+                        TABLA: GROSOR 1.8CM X 290 CM LARGO X
+                        20CM ANCHO
+                        <strong></strong></span>
+                </div>
+            </div>
+        </div>
+        <div class="Catalogo" id="Catalogo">
+            <a href="../Documentos/Catalogo.pdf" target="_blank">Ver catalogo</a>
+        </div>
+    </main>
+
+    <div class="contenedor-ubicacion">
+        <div class="tarjeta-ubicacion">
+            <div class="mapa-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.227016793368!2d-79.0261907!3d-2.9153461999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91cd22848d7a35bb%3A0xaac56968358dc664!2sMaderas%20Habitarq!5e1!3m2!1ses-419!2sec!4v1782314891321!5m2!1ses-419!2sec" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="info-ubicacion">
+                <h3>Visítanos</h3>
+                <span class="direccion-ubicacion">Estamos ubicados en Av. Don Bosco 7-68, Cuenca, Ecuador.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- VENTANA INTERACTIVA MODAL -->
+    <div id="modal-ventana" class="modal-oculto">
+        <div class="modal-caja">
+            <span id="modal-cerrar-btn">&times;</span>
+            <h3 id="modal-nombre"></h3>
+            <p id="modal-detalle"></p>
+            <div id="modal-galeria-interna"></div>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="bloque-pie">
+            <img src="../otros/LogoEmpresa.png" alt="Logo empresa" class="pie" />
+            <h4>&copy; 2026 Habitarq. Todos los derechos reservados.</h4>
+        </div>
+        <div class="bloque-pie">
+            <h3>Horarios de Atención</h3>
+            <h4>Lun - Vie: 8:00 a.m. a 6:00 p.m.</h4>
+            <h4>Sábados: 8:00 a.m. a 1:00 p.m.</h4>
+        </div>
+        <div class="bloque-pie">
+            <h3>Ubicación</h3>
+            <h4>Cuenca, Ecuador</h4>
+            <h4>Materializando la casa de tus sueños.</h4>
+        </div>
+    </footer>
+</body>
+
+</html>

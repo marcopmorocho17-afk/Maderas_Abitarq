@@ -1,0 +1,197 @@
+/* Estilos móviles para pantallas pequeñas */
+html, body {
+    font-size: 16px;
+}
+
+header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 18px;
+    row-gap: 10px;
+}
+
+.Cabezera {
+    width: 100%;
+}
+
+.Cabezera h2 {
+    font-size: 1.2rem;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+nav ul li a {
+    font-size: 0.95rem;
+}
+
+.Titulo {
+    padding: 70px 16px;
+}
+
+.Titulo h1 {
+    font-size: 2.2rem;
+}
+
+.Titulo h2 {
+    font-size: 1rem;
+    margin-bottom: 24px;
+}
+
+.galeria-productos {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 30px 16px 40px;
+}
+
+.tarjeta-producto {
+    width: 100%;
+    max-width: 100%;
+    min-height: 260px;
+}
+
+.tarjeta-producto img {
+    height: 100%;
+}
+
+.hover-titulo {
+    display: none !important;
+}
+
+.tarjeta-producto .info-tarjeta {
+    opacity: 1 !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.tarjeta-producto:hover .info-tarjeta {
+    opacity: 1 !important;
+}
+
+.Catalogo {
+    padding: 0 16px;
+}
+
+.Catalogo a {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contenedor-ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 16px 32px;
+    width: 100%;
+    background: rgba(255, 248, 242, 0.75);
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5), 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor-ubicacion button {
+    width: 100%;
+    max-width: 460px;
+    border: none;
+    color: #ffffff;
+    padding: 16px 20px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #7e5c4a, #3e2723);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    box-shadow: 0 10px 20px rgba(62, 39, 35, 0.2);
+    transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contenedor-ubicacion button:hover {
+    opacity: 0.98;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(62, 39, 35, 0.23);
+}
+
+.tarjeta-ubicacion {
+    width: 100%;
+    max-width: 720px;
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1px solid rgba(158, 121, 87, 0.18);
+}
+
+.mapa-wrapper {
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    overflow: hidden;
+    background: #f8f1e8;
+}
+
+.mapa-wrapper iframe {
+    width: 100%;
+    min-height: 340px;
+    display: block;
+}
+
+.info-ubicacion {
+    padding: 22px 22px 24px;
+    text-align: center;
+    background: #fff6ef;
+    color: #3e2723;
+}
+
+.info-ubicacion h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.15rem;
+    letter-spacing: 0.02em;
+}
+
+.info-ubicacion p {
+    margin: 0;
+    line-height: 1.8;
+    font-size: 0.96rem;
+}
+
+.info-ubicacion strong {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.98rem;
+    color: #5d4037;
+}
+
+.info-ubicacion .direccion-ubicacion {
+    display: block;
+    margin-top: 16px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #5d4037;
+    font-weight: 600;
+}
+
+footer {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 30px 16px;
+}
+
+.bloque-pie {
+    margin: 10px 0;
+}
+
+footer .pie {
+    max-width: 140px;
+}
